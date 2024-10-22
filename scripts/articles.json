@@ -1,0 +1,64 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "thumbnail": "https://picsum.photos/300/300?random=1",
+        "title": "Article Title 1",
+        "description": "This is a short description of article 1."
+      },
+      {
+        "id": 2,
+        "thumbnail": "https://picsum.photos/300/300?random=2",
+        "title": "Article Title 2",
+        "description": "This is a short description of article 2."
+      },
+      {
+        "id": 3,
+        "thumbnail": "https://picsum.photos/300/300?random=3",
+        "title": "Article Title 3",
+        "description": "This is a short description of article 3."
+      },
+      {
+        "id": 4,
+        "thumbnail": "https://picsum.photos/300/300?random=4",
+        "title": "Article Title 4",
+        "description": "This is a short description of article 4."
+      },
+      {
+        "id": 5,
+        "thumbnail": "https://picsum.photos/300/300?random=5",
+        "title": "Article Title 5",
+        "description": "This is a short description of article 5."
+      },
+      {
+        "id": 6,
+        "thumbnail": "https://picsum.photos/300/300?random=6",
+        "title": "Article Title 6",
+        "description": "This is a short description of article 6."
+      },
+      {
+        "id": 7,
+        "thumbnail": "https://picsum.photos/300/300?random=7",
+        "title": "Article Title 7",
+        "description": "This is a short description of article 7."
+      },
+      {
+        "id": 8,
+        "thumbnail": "https://picsum.photos/300/300?random=8",
+        "title": "Article Title 8",
+        "description": "This is a short description of article 8."
+      },
+      {
+        "id": 9,
+        "thumbnail": "https://picsum.photos/300/300?random=9",
+        "title": "Article Title 9",
+        "description": "This is a short description of article 9."
+      },
+      {
+        "id": 10,
+        "thumbnail": "https://picsum.photos/300/300?random=10",
+        "title": "Article Title 10",
+        "description": "This is a short description of article 10."
+      }
+    ]
+  }
