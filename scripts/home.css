@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+a.autor-a {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+}
+img.autor-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main-title {
+    text-align: center;
+    margin: 0px 0;
+    font-size: clamp(53px, 4vw, 62px);
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    gap: 20px;
+    padding: 20px;
+    place-content: center;
+}
+.item-image img {
+    display:grid;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-item {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+}
+.item-text {
+    padding: 5%;
+}
+
+.grid-item h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.grid-item p {
+    margin-bottom: 15px;
+}
