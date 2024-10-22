@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon titre</title>
+    <link rel="stylesheet" href="./scripts/global.css">
+    <link rel="stylesheet" href="./scripts/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">IA & NoCode</div>
+        <div class="about">À propos</div>
+    </header>
+
+    <main>
+        <a class="autor-a"><img class="autor-img" src="./media/images/blog-avatar.png">André Roussille</a>
+        <h1 class="main-title">Blog sur l'IA et le NoCode</h1>
+        <section class="grid-container" id="articles-container">
+            <!-- Aquí se cargarán los artículos dinámicamente -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Aquí puede ir el pie de página -->
+    </footer>
+
+    <script>
+        // Función para cargar JSON externo
+        function loadArticles() {
+            fetch('./scripts/articles.json') // Aquí se carga el archivo JSON externo
+                .then(response => response.json()) // Convertir la respuesta a JSON
+                .then(data => {
+                    const container = document.getElementById('articles-container');
+                    data.articles.forEach(article => {
+                        const articleElement = document.createElement('article');
+                        articleElement.classList.add('grid-item');
+
+                        articleElement.innerHTML = `
+                            <div class="item-image">
+                                <img src="${article.thumbnail}" alt="${article.title}">
+                            </div>
+                            <div class="item-text">
+                                <h2>${article.title}</h2>
+                                <p>${article.description}</p>
+                            </div>
+                        `;
+
+                        container.appendChild(articleElement);
+                    });
+                })
+                .catch(error => console.error('Error loading articles:', error));
+        }
+
+        // Cargar los artículos al cargar la página
+        window.onload = loadArticles;
+    </script>
+</body>
+</html>
